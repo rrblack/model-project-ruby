@@ -23,15 +23,26 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <header>
-
+    <header class="z-99 absolute flex justify-center mx-auto p-4 md:w-full md:h-14 border bg-black fixed -mt-14 ">
+      <div class="text-white">
+        <nav >
+          <ul class="flex gap-10 ">
+            <li class="cursor-pointer"> <%= link_to "HOME", "/" %> </li>
+            <li class="cursor-pointer"> PROFILE</li>
+            <li class="cursor-pointer"> WORK</li>
+            <li class="cursor-pointer"> <%= link_to "CONTACT", "/contact" %> </li>
+            <li class="cursor-pointer"><%= link_to "INSTAGRAM","https://www.instagram.com", target: "_blank" %></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="container mx-auto mt-16 px-5 flex">
+    <main class="relative container mx-auto px-5   md:mt-14">
       <%= yield %>
     </main>
-    
-  </body>
-  <footer>
-    
+    <footer class="w-full h-40 bg-black ">
+    <div class="justify-center mx-auto">
+      
+    </div>
   </footer>
+  </body>
 </html>
