@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "indexedAt": 1771572025144,
+  "controllers": {
+    "hello": {
+      "filePath": "/home/kyle/ruby_projects/model-project/app/javascript/controllers/hello_controller.js",
+      "targets": [],
+      "values": [],
+      "outlets": [],
+      "actions": [],
+      "classes": [],
+      "mtime": 1771496704520.3208
+    }
+  }
+}
