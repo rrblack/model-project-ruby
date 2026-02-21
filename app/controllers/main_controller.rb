@@ -14,7 +14,7 @@ class MainController < ApplicationController
     puts "Email: #{@email}"
     puts "Message: #{@message}"
 
-    ContactMailer.contact_email(params[:name], params[:email], params[:message]).deliver_now
+    ContactMailer.contact_email(@name, @email, @message).deliver_now
 
     redirect_to "/contact", notice: "It worked"
   end

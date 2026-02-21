@@ -2,6 +2,14 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import AOS from "aos"
-import "aos/dist/aos.css"
 
-AOS.init()
+AOS.init({
+  startEvent: "turbo:load",
+  once: true,
+  offset: 0
+})
+
+// Enable browser's native scroll restoration (like Next.js)
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'auto';
+}
