@@ -1,23 +1,24 @@
-<section class="mx-auto justify-center w-120">
-<h1 class="text-6xl mt-4 p-4 gap-2"> Contact </h1>
-<div class="mx-auto p-4 shadow-lg">
+<section class="mx-auto justify-center w-120 min-h-screen ">
+<div class="flex flex-col border mt-50 p-10 rounded">
+<h1 class="text-xl font-bold mt-4 p-4 gap-2 text-center">お問い合わせ </h1>
 <%= form_with url: "/contact", method: :post do %>
 <div class="mb-4 p-4">
-<label class="text-2xl mb-1"> お名前</label>
+<label class="text-md mb-1"> お名前</label>
 <%= text_field_tag :name, nil, class:"w-full border p-2 rounded", required: true %> 
 </div>
 
+
 <div class="mb-4 p-4">
-<label class="text-2xl mb-1"> メール</label>
+<label class="text-md mb-1"> メール</label>
 <%= email_field_tag :email, nil, class:"w-full border p-2 rounded", required: true %>
 </div>
 
 <div class="mb-4 p-4">
-<label class="text-2xl mb-1"> メッセージ</label>
+<label class="text-md mb-1">ご要件</label>
 <%= text_area_tag :message, nil, class:"border p-2 rounded w-full h-32", required: true %>
 </div>
 
-<%= submit_tag "送信", class:"border rounded-xl h-10 bg-red-500 w-full text-white cursor-pointer" %>
+<%= submit_tag "送信", class:"border rounded-xl h-10 bg-black transition-colors duration-500 hover:bg-gray-700 w-full text-white cursor-pointer" %>
 <% if notice %>
     <div class="text-green-400 text-2xl border p-4 mb-4 mt-4 ">
       <%= notice %> 
