@@ -8,3 +8,22 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+nav {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+}
+footer {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 100;
+    font-style: italic;
+}

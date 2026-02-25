@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "https://unpkg.com/aos@2.3.1/dist/aos.css" %>
     <title><%= content_for(:title) || "Model Project" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -41,7 +43,7 @@
       <%= yield %>
     </main>
     <footer class="flex justify-center w-full h-40 bg-black items-end p-4">
-    <div class="mx-auto text-center text-white md:text-sm  ">
+    <div class="mx-auto text-center text-white md:text-sm text-sm">
     <p class="bottom-0"> © Copyright    |   Kurasa Rina   |   All Rights Reserved </p>
     </div>
   </footer>
