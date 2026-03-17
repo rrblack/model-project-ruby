@@ -27,6 +27,17 @@ footer {
     font-weight: 100;
     font-style: italic;
 }
+summary {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+ul {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 200;
+  font-style: bold;
+}
 
 html {
   scroll-behavior: smooth;
