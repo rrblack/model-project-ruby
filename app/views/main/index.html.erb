@@ -5,28 +5,33 @@
 </div>
 </section> 
 
-<section class="flex flex-col relative mx-auto bg-gray-200 overflow-hidden min-h-screen">
+<section id="intro" class="flex flex-col relative mx-auto bg-gray-200 overflow-hidden min-h-screen">
 <div class=" p-25 ">
   <h1 class="font-bold text-7xl text-black mt-10 ">自己紹介</h1>
 </div>
 <div class=" md:-mt-15 flex justify-center items-center md:p-8 md:px-18 md:text-2xl ">
-  <%= image_tag 'IMG_6996.jpeg', class:"w-auto h-250 mb-20 rounded " %> 
-  <div class="flex flex-col ">
-    <h1 class="text-center p-4 mt-10">プロフィール</h1>
-  <p class="md:h-auto  md:w-140 px-10 p-4">
-<b>フリーランスモデル / 女優 / 司会（MC）</b>
+  <%= image_tag 'IMG_6996.jpeg', class:"w-auto h-250 mb-20 rounded shadow-2xl" %> 
+  <%# Wrapper div for full body%>
+  <div class="flex flex-col mx-10 shadow-2xl border-3 rounded-xl p-4">
+    <%# Wrapper div for header%>
+    <div class="bg-black mx-auto h-15 w-50 rounded-lg shadow-md mb-8">
+    <h1 class="text-center p-4 text-white">プロフィール</h1>
+    </div>
+    <div class="border-amber-950">
+  <p class="md:h-auto  md:w-180 px-10 p-4">
+<b class="text-center">フリーランスモデル / 女優 / 司会（MC）</b>
 <br><br> 
 「見たことある！広告で1番有名な女性“りーまる”って何者？」で特集された、<i><b>倉沢りな（りーまる）</i></b>です。
 <br><br> 
-広告・CM・企業プロモーション動画を中心に、
-広告モデルとして10年以上活動しています。
-<br><br> 
-また、企業イベントや対談などMC・リポーターとして
-進行も行っています。 
+広告・CM・企業プロモーション動画を中心に、広告モデルとして10年以上活動。
+企業イベントや対談などMC・リポーターとして進行も行っています。 
 </p>
+</div>
 
-
-<h1 class="text-center p-4 mt-10">情報</h1>
+<%# Wrapper div for header%>
+    <div class="bg-black mx-auto h-15 w-50 rounded-lg shadow-md mt-8 mb-8">
+<h1 class="text-center p-4 text-white">情報</h1>
+    </div>
 <table class="border-collapse px-10 ml-10">
   <tbody>
     <tr>
@@ -60,7 +65,19 @@
     </tr>
     <tr>
       <td class="pr-8 py-1">趣味</td>
-      <td class="py-1 max-w-48">ヨガ、筋トレ、美味しいご飯を食べる</td>
+      <td class="py-1 max-w-48">ヨガ、筋トレ、美味しいご飯屋さん開拓</td>
+    </tr>
+    <tr>
+      <td class="pr-8 py-1">保有資格</td>
+      <td class="py-1 max-w-48">
+        <ul class="space-y-4 mt-8">
+          <li>サービス接遇検定準1級</li>
+          <li>日本化粧品検定2級</li>
+          <li>秘書技能検定2級</li>
+          <li>普通自動車免許</li>
+          <li>実用英語技能検定2級</li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -68,35 +85,10 @@
 </div>
 </section> 
 
-
-<section class="bg-gradient-to-b from-black via-gray-800 to-gray-600">
-  <h1 class="text-center text-5xl mb-4 py-8 font-bold  text-white"> 映像実績 </h1>
-  <div class="mb-10 py-10">
-  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4 py-8">
-  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/ajr8Bd9orIo" class="rounded"> 
-    </iframe>
-    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/EOKI-aaOwVw" class="rounded"> 
-    </iframe>
-  </div>
-  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4">
-  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/wac0FdW9Fwk" class="rounded"> 
-    </iframe>
-    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/vFsKgE-tv5E" class="rounded"> 
-    </iframe>
-  </div>
-  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4">
-  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/G8-NtQZCoM0" class="rounded"> 
-    </iframe>
-    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/oyZkCpEv-i4" class="rounded"> 
-    </iframe>
-  </div>
-  </div>
-</section>
-
-<section class="min-h-screen flex flex-col items-center">
-  <h1 class="text-center text-4xl mb-4 font-bold py-4 text-black"> 同会・リポーター実績 </h1>
+<section id="doukai" class="min-h-screen flex flex-col items-center">
+  <h1 class="text-center text-5xl mb-4 font-bold py-4 mt-8 text-black"> 同会・リポーター実績 </h1>
   <div class="pt-10 gap-24 grid grid-cols-3 justify-center items-start text-4xl w-">
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer"> 
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2"> 
       <summary class="font-bold">
         広告
       </summary>
@@ -128,7 +120,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">CM（主演）</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>中国汾酒</li>
@@ -138,7 +130,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">プロモーション</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>ヨックモック</li>
@@ -150,7 +142,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">ナビゲーター</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>日本郵政株式会社</li>
@@ -158,7 +150,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">アパレル</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>モンクレール 着画モデル</li>
@@ -174,7 +166,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold text-3xl">書籍表紙・雑誌掲載</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>マーケティング検定3級問題集</li>
@@ -185,7 +177,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">MC対談</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>本麒麟</li>
@@ -195,7 +187,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">イベント進行</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>東急バス タンデムライナー開通式</li>
@@ -208,7 +200,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">YouTube番組MC</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>セントラル短資FX</li>
@@ -217,7 +209,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">MCリポーター</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>ヒトサラジャーナル 番組MCレポーター</li>
@@ -227,7 +219,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">テレビ</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>TBS キニナル通販</li>
@@ -236,7 +228,7 @@
       </ul>
     </details>
 
-    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer">
+    <details class="bg-gray-200/10 p-6 shadow-sm rounded-lg w-90 h-auto cursor-pointer border-2">
       <summary class="font-bold">ナレーション</summary>
       <ul class="mt-3 space-y-6 text-xl list-none">
         <li>大阪万博2025 熊本編</li>
@@ -245,19 +237,42 @@
         <li>BS旅チャンネル</li>
       </ul>
     </details>
+  </div>
+</section>
 
+<section class="bg-gradient-to-b from-black via-gray-800 to-gray-600">
+  <h1 class="text-center text-6xl mb-2 py-4 font-bold pt-8 text-white"> 映像実績 </h1>
+  <div class="mb-10 py-10">
+  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4 py-8">
+  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/ajr8Bd9orIo" class="rounded shadow-2xl"> 
+    </iframe>
+    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/EOKI-aaOwVw" class="rounded shadow-2xl"> 
+    </iframe>
+  </div>
+  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4">
+  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/wac0FdW9Fwk" class="rounded shadow-2xl"> 
+    </iframe>
+    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/vFsKgE-tv5E" class="rounded shadow-2xl"> 
+    </iframe>
+  </div>
+  <div class="p-4 gap-4 flex justify-center mx-auto -mt-4">
+  <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/G8-NtQZCoM0" class="rounded shadow-2xl"> 
+    </iframe>
+    <iframe width="500" height="260" allowfullscreen src="https://www.youtube.com/embed/oyZkCpEv-i4" class="rounded shadow-2xl"> 
+    </iframe>
+  </div>
   </div>
 </section>
 
 <section class="min-h-screen">
-  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-white"> キャスティング事業 </h1>
+  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-black"> キャスティング事業 </h1>
   <div>
     
   </div>
 </section>
 
 <section class="min-h-screen">
-  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-white"> 映像実績 </h1>
+  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-white">  </h1>
   <div>
     
   </div>
