@@ -1,5 +1,6 @@
 <section class="mx-auto justify-center w-120 min-h-screen ">
-<div class="flex flex-col border mt-50 p-10 rounded">
+  <div class="mt-20"><%= link_to "← トップへ戻る", "/", class: "text-sm text-gray-500 hover:text-black" %></div> 
+<div class="flex flex-col border mt-4 p-10 rounded">
 <h1 class="text-xl font-bold mt-4 p-4 gap-2 text-center">お問い合わせ </h1>
 <%= form_with url: "/contact", method: :post do %>
 <div class="mb-4 p-4">
