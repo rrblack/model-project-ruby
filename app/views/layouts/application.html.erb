@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "https://unpkg.com/aos@2.3.1/dist/aos.css" %>
-    <title><%= content_for(:title) || "Model Project" %></title>
+    <title><%= content_for(:title) || "倉沢りな ポートフォリオサイト" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Model Project">
@@ -30,10 +30,10 @@
       <div class="text-white">
         <nav >
           <ul class="flex md:gap-10 gap-5">
-            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> <%= link_to "自己紹介","#intro", target: "_blank" %></li>
+            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> <%= link_to "自己紹介","/#intro"%></li>
             <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> モデル</li>
-            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> <%= link_to "司会リポーター","#doukai", target: "_blank" %></li>
-            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"><%= link_to "SNS","#SNS", target: "_blank" %></li>
+            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> <%= link_to "司会リポーター","/#doukai" %></li>
+            <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"><%= link_to "SNS","/#SNS" %></li>
             <li class="cursor-pointer transition-colors duration-500 hover:bg-white px-4 py-1 hover:text-black rounded-sm"> <%= link_to "お問い合わせ", "/contact" %> </li>
           </ul>
         </nav>
