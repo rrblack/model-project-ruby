@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="gallery"
 export default class extends Controller {
-  static targets = ["panel"]
+  static targets = ["panel", "button"]
 
   connect() {
     this.panelTargets.forEach(panel => {
@@ -25,6 +25,15 @@ export default class extends Controller {
       } else {
         panel.classList.remove("opacity-100")
         panel.classList.add("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
+      }
+    })
+    this.buttonTargets.forEach(button => {
+      if (button.dataset.category === category) {
+        button.classList.add("bg-white", "text-black")
+        button.classList.remove("bg-black", "text-white")
+      } else {
+        button.classList.remove("bg-white", "text-black")
+        button.classList.add("bg-black", "text-white")
       }
     })
   }
