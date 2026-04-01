@@ -341,40 +341,74 @@
   </div>
 </section>
 
-<section id="model" data-controller="gallery" class="min-h-screen overflow-hidden">
+<section id="model" data-controller="gallery" class="overflow-hidden pb-16">
   <h1 class="text-center text-5xl mb-4 font-bold py-4 text-black"> モデル実績 </h1>
-  <div class="flex justify-center gap-4">
+  <div class="flex flex-wrap justify-center gap-3 mb-6 px-4">
     <button data-category="koukoku" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> 広告 </button>
     <button data-category="beauty" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> ビューティー </button>
     <button data-category="sports" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> スポーツ </button>
     <button data-category="business" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> ビジネス </button>
     <button data-category="mother" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> ママ役 </button>
+    <button data-category="fashion" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> ファッション </button>
+    <button data-category="editorial" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> エディトリアル </button>
+    <button data-category="kimono" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> 着物 </button>
+    <button data-category="pet" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> ペット </button>
   </div>
-  <div class="relative h-300 max-w-5xl mx-auto">
-  <%# 広告%>
-   <div data-gallery-target="panel" data-category="koukoku" class="absolute inset-0 grid grid-cols-3 gap-4 mt-4 mx-4 mb-4 transition-opacity duration-500 rounded-2xl overflow-hidden">
-  <%= image_tag 'S__10059868_0.jpg', class:"col-span-2 row-span-2 w-full h-full object-cover rounded-2xl" %>
-  <%= image_tag 'S__10059869_0.jpg', class:"w-full h-full object-cover" %>
-  <%= image_tag 'S__10059870_0.jpg', class:"w-full h-full object-cover" %>
-  </div>
-  <%# ビューティー%>
-  <div data-gallery-target="panel" data-category="beauty" class="absolute inset-0 grid grid-cols-3 gap-4 mt-4 mx-4 mb-4 transition-opacity duration-500 rounded-2xl overflow-hidden">
-    <%= image_tag 'S__10059871_0.jpg', class:"col-span-2 row-span-2 w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'S__10059872_0.jpg', class:"w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'S__10059873_0.jpg', class:"w-full h-full object-cover rounded-2xl" %>
-  </div>
-  <%# スポーツ%>
-  <div data-gallery-target="panel" data-category="sports" class="absolute inset-0 grid grid-cols-3 gap-4 mt-4 mx-4 mb-4 transition-opacity duration-500 rounded-2xl overflow-hidden">
-    <%= image_tag 'S__10059874_0.jpg', class:"col-span-2 row-span-2 w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'S__10059876_0.jpg', class:"w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'S__37756947.jpg', class:"w-full h-full object-cover rounded-2xl" %>
-  </div>
-  <%# ママ役%>
-  <div data-gallery-target="panel" data-category="mother" class="absolute inset-0 grid grid-cols-3 gap-4 mt-4 mx-4 mb-4 transition-opacity duration-500 rounded-2xl overflow-hidden">
-    <%= image_tag 'IMG_7340.jpeg', class:"col-span-2 row-span-2 w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'IMG_9788.jpeg', class:"w-full h-full object-cover rounded-2xl" %>
-    <%= image_tag 'IMG_6996.jpeg', class:"w-full h-full object-cover rounded-2xl" %>
-  </div>
+  <div class="max-w-6xl mx-auto px-4">
+    <%# 広告 %>
+    <div data-gallery-target="panel" data-category="koukoku" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..5).each do |i| %>
+        <%= image_tag "koukoku_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# ビューティー %>
+    <div data-gallery-target="panel" data-category="beauty" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..20).each do |i| %>
+        <%= image_tag "beauty_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# スポーツ %>
+    <div data-gallery-target="panel" data-category="sports" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..19).each do |i| %>
+        <%= image_tag "sports_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# ビジネス %>
+    <div data-gallery-target="panel" data-category="business" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..12).each do |i| %>
+        <%= image_tag "business_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# ママ役 %>
+    <div data-gallery-target="panel" data-category="mother" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..12).each do |i| %>
+        <%= image_tag "mother_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# ファッション %>
+    <div data-gallery-target="panel" data-category="fashion" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..7).each do |i| %>
+        <%= image_tag "fashion_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# エディトリアル %>
+    <div data-gallery-target="panel" data-category="editorial" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..4).each do |i| %>
+        <%= image_tag "editorial_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# 着物 %>
+    <div data-gallery-target="panel" data-category="kimono" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..4).each do |i| %>
+        <%= image_tag "kimono_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
+    <%# ペット %>
+    <div data-gallery-target="panel" data-category="pet" class="grid grid-cols-3 md:grid-cols-4 gap-3 transition-opacity duration-500">
+      <% (1..4).each do |i| %>
+        <%= image_tag "pet_#{i}.jpg", class:"w-full h-64 object-cover rounded-lg" %>
+      <% end %>
+    </div>
   </div>
 </section>
 
