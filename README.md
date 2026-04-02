@@ -1,25 +1,35 @@
-# README
+# Model Portfolio Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A portfolio website built in Ruby on Rails for a model client based in Japan.
 
-Things you may want to cover:
+## How This Project Started
 
-* Ruby version
+My wife posted on Instagram that I build websites. A model with over 4,000 followers saw the post and reached out asking if I could build her a portfolio site. I volunteered to take it on.
 
-* System dependencies
+It was a natural opportunity to work with a real client brief while also pushing myself technically. I had been working primarily in Next.js and TypeScript, and I wanted to see what web development felt like in a completely different ecosystem. Ruby on Rails was the answer.
 
-* Configuration
+Next.js is still my primary stack and will remain so. But this project has been a genuinely valuable learning experience. Rails has a different philosophy from Next.js and understanding that difference has made me a better developer overall.
 
-* Database creation
+## Tech Stack
 
-* Database initialization
+- **Framework:** Ruby on Rails
+- **Frontend:** Tailwind CSS, ERB templates
+- **Interactivity:** Hotwire, Stimulus
+- **Database:** PostgreSQL
+- **Deployment:** TBD
 
-* How to run the test suite
+## What I Am Learning
 
-* Services (job queues, cache servers, search engines, etc.)
+- Rails conventions and MVC architecture
+- ERB templating vs JSX
+- Hotwire and Turbo Frames as an alternative to React state management
+- Stimulus for lightweight JavaScript behavior
+- How opinionated frameworks shape the way you think about problems
 
-* Deployment instructions
+## Status
 
-* ...
-# model-project-ruby
+Active development. This is a real client project for a real person, built while learning Rails from the ground up.
+
+---
+
+*Part of an ongoing journey to build across multiple stacks and become a stronger full-stack developer.*
