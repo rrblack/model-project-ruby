@@ -4,7 +4,7 @@ A portfolio website built in Ruby on Rails for a model client based in Japan.
 
 ## How This Project Started
 
-My wife posted on Instagram that I build websites. A model with over 4,000 followers saw the post and reached out asking if I could build her a portfolio site. I volunteered to take it on.
+My wife posted on Instagram that I build websites. A model with over 40,000 followers saw the post and reached out asking if I could build her a portfolio site. I volunteered to take it on.
 
 It was a natural opportunity to work with a real client brief while also pushing myself technically. I had been working primarily in Next.js and TypeScript, and I wanted to see what web development felt like in a completely different ecosystem. Ruby on Rails was the answer.
 
