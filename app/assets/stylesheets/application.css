@@ -15,7 +15,6 @@ body {
 h1 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-style: italic;
 }
 
 nav {
@@ -25,12 +24,10 @@ nav {
 footer {
     font-family: 'Noto Serif JP', serif;
     font-weight: 100;
-    font-style: italic;
 }
 summary {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-style: italic;
 }
 
 ul {

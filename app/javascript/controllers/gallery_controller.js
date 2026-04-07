@@ -6,7 +6,7 @@ export default class extends Controller {
 
   connect() {
     this.panelTargets.forEach(panel => {
-      if (panel.dataset.category === "koukoku") {
+      if (panel.dataset.category === "beauty") {
         panel.classList.remove("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
         panel.classList.add("opacity-100")
       } else {
