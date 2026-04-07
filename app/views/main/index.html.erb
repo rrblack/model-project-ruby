@@ -1,23 +1,25 @@
 <%# Desktop slideshow — hidden on mobile %>
-<section data-controller="slideshow" class="hidden md:block relative h-screen bg-gray-400 overflow-hidden">
-<div class="h-screen">
+<section data-controller="slideshow" class="hidden md:block relative h-screen overflow-hidden">
+<div class="h-screen relative">
   <%= image_tag 'desktop_1.jpg', class:"slide active absolute w-full h-full object-cover inset-0" %>
   <%= image_tag 'desktop_2.jpg', class:"slide absolute w-full h-full object-cover inset-0" %>
   <%= image_tag 'desktop_3.jpg', class:"slide absolute w-full h-full object-cover inset-0" %>
   <%= image_tag 'desktop_4.jpg', class:"slide absolute w-full h-full object-cover inset-0" %>
+  <%= image_tag 'signature.png', class:"absolute w-full inset-0 -mt-52 opacity-75" %>
   <div data-aos="fade-up" data-aos-duration="2000" class="absolute bottom-12 left-0 md:px-16 px-10">
-    <h1 style="text-shadow: 0 0 9px black, 0 0 6px black; font-family: 'Playfair Display', serif; font-style: normal; letter-spacing: 0.15em;" class="font-bold md:text-8xl text-6xl text-white">KURASAWA RINA</h1>
+  
     <p style="text-shadow: 0 0 4px black, 0 0 4px black;" class="text-white opacity-60 tracking-[0.2em] text-sm md:text-base mt-3 font-light">@riii_maru162cm</p>
   </div>
 </div>
 </section>
 
 <%# Mobile slideshow — hidden on desktop %>
-<section data-controller="slideshow" class="md:hidden relative h-screen bg-gray-400 overflow-hidden">
+<section data-controller="slideshow" class="md:hidden relative h-screen overflow-hidden">
 <div class="h-screen">
   <%= image_tag 'mobile_1.jpg', class:"slide active absolute w-full h-full object-cover object-right inset-0" %>
   <%= image_tag 'mobile_2.jpg', class:"slide absolute w-full h-full object-cover object-top inset-0" %>
-  <%= image_tag 'mobile_3.jpg', class:"slide absolute w-full h-full object-cover object-top inset-0" %>
+  <%= image_tag 'mobile_3.jpg', class:"slide absolute w-full h-full object-cover object-top inset-0 z-99" %>
+  <%= image_tag 'signature.png', class:"absolute w-full inset-0 mt-24" %>
   <div data-aos="fade-up" class="absolute bottom-10 left-0 px-10">
     <h1 style="text-shadow: 0 0 6px black, 0 0 6px black; font-family: 'Playfair Display', serif; font-style: normal; letter-spacing: 0.1em;" class="font-bold text-5xl text-white">KURASAWA RINA</h1>
     <p style="text-shadow: 0 0 4px black, 0 0 4px black;" class="text-white opacity-55 tracking-[0.18em] text-xs mt-2 font-light">@riii_maru162cm</p>
@@ -25,7 +27,7 @@
 </div>
 </section> 
 
-<section id="intro" class="flex flex-col relative mx-auto bg-gradient-to-b from-gray-200 to-white overflow-hidden min-h-screen">
+<section id="intro" class="flex flex-col relative mx-auto overflow-hidden min-h-screen">
 <div class=" flex md:p-25 p-8 ">
   <div class="bg-black inline-block rounded-lg shadow-md md:mt-10 md:mb-2 md:p-2  md:mx-8">
     <h1 class="font-bold md:text-5xl text-3xl text-white text-center p-4">自己紹介</h1>
@@ -38,9 +40,8 @@
     <%# Wrapper div for profile section%>
     <div class="">
       <%# Wrapper div for header%>
-    <div class="leading-tight">
-    <h1 class=" text-black text-center p-4 text-xl -tracking-widest ">プロフィール</h1>
-    </div>
+     <details class="p-4">
+    <summary class="leading-tight text-black text-center p-4 text-xl -tracking-widest rounded-xl border list-none cursor-pointer">プロフィール</summary>
     <div class="border-amber-950">
   <p class="md:h-auto   px-10 p-4 ">
 
@@ -55,13 +56,15 @@
 </p>
 </div>
 </div>
+</details>
+
 
 <%# Wrapper div for column %>
-<div class="pl-8">
   <%# Wrapper div for header %>
-    <div class="">
-<h1 class="text-center p-4 text-black text-xl">情報</h1>
-    </div>
+
+<details class="p-4">
+<summary class="text-center p-4 text-black text-xl list-none border rounded-xl cursor-pointer">情報</summary>
+<div class="">
 <table class="border-collapse md:px-10 md:ml-10">
   <tbody class="">
     <tr>
@@ -111,6 +114,7 @@
     </tr>
   </tbody>
 </table>
+</details>
 </div>
 </div>
 </div>
