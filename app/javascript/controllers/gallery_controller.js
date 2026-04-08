@@ -9,6 +9,7 @@ export default class extends Controller {
       if (panel.dataset.category === "beauty") {
         panel.classList.remove("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
         panel.classList.add("opacity-100")
+        requestAnimationFrame(() => this.setSpans(panel))
       } else {
         panel.classList.remove("opacity-100")
         panel.classList.add("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
@@ -22,6 +23,7 @@ export default class extends Controller {
       if (panel.dataset.category === category) {
         panel.classList.remove("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
         panel.classList.add("opacity-100")
+        requestAnimationFrame(() => this.setSpans(panel))
       } else {
         panel.classList.remove("opacity-100")
         panel.classList.add("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
@@ -34,6 +36,24 @@ export default class extends Controller {
       } else {
         button.classList.remove("bg-white", "text-black")
         button.classList.add("bg-black", "text-white")
+      }
+    })
+  }
+
+  setSpans(panel) {
+    if (window.innerWidth < 768) return
+    const rowHeight = 10
+    const gap = 12
+    const colWidth = panel.offsetWidth / 3
+    panel.querySelectorAll("img").forEach(img => {
+      const applySpan = () => {
+        const spans = Math.ceil((img.naturalHeight / img.naturalWidth * colWidth + gap) / (rowHeight + gap))
+        img.style.gridRowEnd = `span ${spans}`
+      }
+      if (img.complete && img.naturalHeight > 0) {
+        applySpan()
+      } else {
+        img.addEventListener("load", applySpan, { once: true })
       }
     })
   }

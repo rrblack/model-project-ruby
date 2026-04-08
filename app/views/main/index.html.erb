@@ -376,42 +376,42 @@
   </div>
   <div class="max-w-6xl mx-auto px-4">
     <%# ビューティー %>
-    <div data-gallery-target="panel" data-category="beauty" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
+    <div data-gallery-target="panel" data-category="beauty" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
       <% (1..20).each do |i| %>
-        <%= image_tag "beauty_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+        <%= image_tag "beauty_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
     <%# ビジネス %>
-    <div data-gallery-target="panel" data-category="business" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
-      <% (1..12).each do |i| %>
-        <%= image_tag "business_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+    <div data-gallery-target="panel" data-category="business" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
+      <% (1..19).each do |i| %>
+        <%= image_tag "business_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
     <%# ファミリー %>
-    <div data-gallery-target="panel" data-category="family" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
+    <div data-gallery-target="panel" data-category="family" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
       <% (1..12).each do |i| %>
-        <%= image_tag "mother_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+        <%= image_tag "mother_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
     <%# スポーツ %>
-    <div data-gallery-target="panel" data-category="sports" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
+    <div data-gallery-target="panel" data-category="sports" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
       <% (1..19).each do |i| %>
-        <%= image_tag "sports_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+        <%= image_tag "sports_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
     <%# ファッション %>
-    <div data-gallery-target="panel" data-category="fashion" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
-      <% (1..7).each do |i| %>
-        <%= image_tag "fashion_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+    <div data-gallery-target="panel" data-category="fashion" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
+      <% (1..41).each do |i| %>
+        <%= image_tag "fashion_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
     <%# その他 %>
-    <div data-gallery-target="panel" data-category="other" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
+    <div data-gallery-target="panel" data-category="other" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
     </div>
     <%# TV・CM %>
-    <div data-gallery-target="panel" data-category="tvcm" class="grid grid-cols-1 md:grid-cols-3 gap-3 transition-opacity duration-500">
+    <div data-gallery-target="panel" data-category="tvcm" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
       <% (1..4).each do |i| %>
-        <%= image_tag "koukoku_#{i}.jpg", class:"w-full h-100 object-cover rounded-lg" %>
+        <%= image_tag "koukoku_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
       <% end %>
     </div>
   </div>
