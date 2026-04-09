@@ -407,6 +407,12 @@
     </div>
     <%# その他 %>
     <div data-gallery-target="panel" data-category="other" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
+      <% (1..3).each do |i| %>
+        <%= image_tag "editorial_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
+      <% end %>
+      <% (1..4).each do |i| %>
+        <%= image_tag "pet_#{i}.jpg", class:"w-full object-cover rounded-lg" %>
+      <% end %>
     </div>
     <%# TV・CM %>
     <div data-gallery-target="panel" data-category="tvcm" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500">
