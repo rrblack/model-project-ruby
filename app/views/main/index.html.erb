@@ -1,5 +1,5 @@
 <%# Desktop slideshow — hidden on mobile %>
-<section data-controller="slideshow" class="hidden md:block relative h-screen overflow-hidden">
+<section data-controller="slideshow" class="hidden md:block relative h-screen overflow-hidden sticky top-0">
 <div class="h-screen relative flex row">
   <%= image_tag 'desktop_1.jpg', class:"slide active absolute w-full h-full object-cover inset-0" %>
   <%= image_tag 'desktop_2.jpg', class:"slide absolute w-full h-full object-cover inset-0" %>
@@ -26,21 +26,21 @@
 </div>
 </section> 
 
-<section id="intro" class="flex flex-col relative mx-auto overflow-hidden min-h-screen">
-<div class=" flex md:p-25 p-8 ">
-  <div class="bg-black inline-block rounded-lg shadow-md md:mt-10 md:mb-2 md:p-2  md:mx-8">
-    <h1 class="font-bold md:text-5xl text-3xl text-white text-center p-4">自己紹介</h1>
-  </div>
+
+<section id="intro" class="flex flex-col relative mx-auto overflow-hidden min-h-screen z-20 bg-white">
+<div class="  md:p-25 p-8 ">
+<p class="text-center text-black text-2xl font-bold tracking-widest">Kurasawa Rina </p>
+<p class="text-center text-black text-xl">freelance model </p>
 </div>
 <div class=" md:-mt-15 flex flex-col md:flex-row md:justify-center md:items-stretch md:p-8 md:px-18 md:text-2xl">
   <%= image_tag 'IMG_6996.jpeg', class:" lg:h-324 md:w-175 md:h-124 w-full h-full mb-20 rounded shadow-2xl object-cover" %> 
   <%# Wrapper div for full body%>
-  <div class="flex flex-col md:items-stretch md:mx-24 mx-auto shadow-sm rounded-xl p-4 md:h-full  md:w-175 w-90 h-auto mb-18" >
+  <div class="flex flex-col md:items-stretch md:mx-24 mx-auto shadow-sm rounded-xl p-4 md:h-full md:w-175 w-full h-auto mb-18" >
     <%# Wrapper div for profile section%>
     <div class="">
       <%# Wrapper div for header%>
      <details id="details_1" class="group p-4">
-    <summary close md:open class="leading-tight text-black text-center p-4 text-xl -tracking-widest rounded-xl border list-none cursor-pointer hover:bg-black hover:text-white group-open:bg-black group-open:text-white transition-colors duration-200">プロフィール</summary>
+    <summary close md:open class="relative flex items-center justify-center leading-tight text-black text-center p-4 text-xl -tracking-widest rounded-md border list-none cursor-pointer hover:bg-gray-100 hover:text-black group-open:bg-white group-open:text-black transition-colors duration-200"><span class="group-open:hidden absolute left-4 text-4xl ml-auto">+</span><span class="hidden group-open:block absolute left-4 text-4xl ml-auto">−</span>プロフィール</summary>
     <div class="border-amber-950">
   <p class="md:h-auto   px-10 p-4 ">
 
@@ -67,9 +67,9 @@
   <%# Wrapper div for header %>
 
 <details id="details_2" class="group p-4">
-<summary class="text-center p-4 text-black text-xl list-none border rounded-xl cursor-pointer hover:bg-black hover:text-white group-open:bg-black group-open:text-white transition-colors duration-200">情報</summary>
-<div class="p-4">
-<table class="border-collapse md:px-10 md:ml-10">
+<summary class="relative flex items-center justify-center p-4 text-black text-xl list-none border rounded-md cursor-pointer hover:bg-gray-100 hover:text-black group-open:bg-white group-open:text-black transition-colors duration-200"><span class="group-open:hidden absolute left-4 text-4xl ml-auto">+</span><span class="hidden group-open:block absolute left-4 text-4xl ml-auto">−</span>情報</summary>
+<div class="p-4 overflow-x-auto">
+<table class="border-collapse md:px-10 md:ml-10 w-full">
   <tbody class="">
     <tr>
       <td class="font-black pr-8 py-1">生年月日</td>
@@ -129,14 +129,14 @@
 </div>
 </section> 
 
-<section id="doukai" class="min-h-screen flex flex-col items-center overflow-hidden ">
-  <h1 class="text-center text-5xl md:mb-4 font-bold md:py-4 mt-8 text-black p-8 after:block after:mx-auto after:bg-black after:w-64 after:h-1 after:text-center after:my-2"> 同会・リポーター実績 </h1>
-  <div class="pt-10 gap-24 grid md:grid-cols-3 grid-cols-1 justify-center items-start text-4xl w-">
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+<section id="doukai" class="min-h-screen flex flex-col items-center overflow-hidden bg-white relative z-20">
+  <h1 class="text-center text-4xl md:mb-4 font-bold md:py-4 mt-8 text-black p-8 after:block after:mx-auto after:bg-black after:w-64 after:h-0.5 after:text-center after:my-2"> 司会・リポーター実績 </h1>
+  <div class="pt-10 md:columns-3 columns-1 gap-8 md:px-64 px-4 text-2xl md:gap-24">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none ">
       <summary class="font-bold">
         広告
       </summary>
-      <ul class="mt-8 space-y-6 text-xl gap-12 cursor-default ">
+      <ul class="mt-8 space-y-6 text-xl gap-12 cursor-default mt-12">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5 ">農林水産省 米粉パンを食べよう</li>
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">日本乳癌検診学会 全国乳がん検診</li>
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">東武鉄道株式会社 東武バス</li>
@@ -169,7 +169,19 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
+      <summary class="font-bold">プロモーション</summary>
+      <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヨックモック</li>
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">STRAPPER 2WAYスムースストラップライト 母役</li>
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Totoco小田原</li>
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">鴨川館</li>
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">グランドプリンス新高輪</li>
+        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">公益社団法人 2027年国際園芸博覧会協会 母役</li>
+      </ul>
+    </details>
+
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">アパレル</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">モンクレール 着画モデル</li>
@@ -191,8 +203,9 @@
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">セーレン株式会社　onaka想いガードル</li>
       </ul>
     </details>
+    
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">イベント進行</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">東急バス　タンデムライナー開通式</li>
@@ -212,20 +225,8 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
-      <summary class="font-bold">プロモーション</summary>
-      <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヨックモック</li>
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">STRAPPER 2WAYスムースストラップライト 母役</li>
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Totoco小田原</li>
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">鴨川館</li>
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">グランドプリンス新高輪</li>
-        <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">公益社団法人 2027年国際園芸博覧会協会 母役</li>
-      </ul>
-    </details>
-
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
-      <summary class="font-bold text-3xl">書籍表紙・雑誌掲載</summary>
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
+      <summary class="font-bold">書籍表紙・雑誌掲載</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">マーケティング検定3級問題集</li>
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">最高の髪型解剖図鑑</li>
@@ -235,7 +236,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">CM（主演）</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">中国汾酒</li>
@@ -245,7 +246,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">MC対談</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">本麒麟</li>
@@ -255,7 +256,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">MCリポーター</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヒトサラジャーナル 番組MCレポーター</li>
@@ -265,7 +266,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">テレビ</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">TBS キニナル通販</li>
@@ -275,7 +276,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">ナレーション</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">大阪万博2025 熊本編</li>
@@ -285,7 +286,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none">
+    <details open class="break-inside-avoid mb-6 bg-white p-6 shadow-xl rounded-lg cursor-pointer border-2 select-none mt-12">
       <summary class="font-bold">YouTube番組MC</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">セントラル短資FX</li>
@@ -294,7 +295,7 @@
       </ul>
     </details>
 
-    <details open class="bg-gray-200/10 p-6 shadow-xl rounded-lg w-90 h-auto cursor-pointer border-2 select-none mb-12">
+    <details open class= "bg-white p-6 shadow-xl rounded-lg w-full h-auto cursor-pointer border-2 select-none mb-12 mt-12">
       <summary class="font-bold">ナビゲーター</summary>
       <ul class="mt-3 space-y-6 text-xl list-none cursor-default">
         <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-full after:mt-2 after:h-0.5">日本郵政株式会社</li>
@@ -302,44 +303,11 @@
       </ul>
     </details>
   </div>
-
-  <%# Audio samples %>
-  <div class="mt-16 mb-12 w-full max-w-2xl px-6">
-    <div class="bg-black mx-auto h-15 w-60 rounded-lg shadow-md mb-8 flex items-center justify-center">
-      <h2 class="text-center text-white text-xl">ボイスサンプル</h2>
-    </div>
-
-    <div class="space-y-6">
-      <div class="bg-gray-200/10 border-2 rounded-xl p-5 shadow-xl">
-        <p class="font-bold mb-3">CMナレーション「お掃除編」</p>
-        <audio controls preload="none" class="w-full">
-          <source src="<%= asset_path('voice_cm_narration.mp3') %>" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="bg-gray-200/10 border-2 rounded-xl p-5 shadow-xl">
-        <p class="font-bold mb-3">MC司会「ABCブース編」</p>
-        <audio controls preload="none" class="w-full">
-          <source src="<%= asset_path('voice_mc_abc.mp3') %>" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="bg-gray-200/10 border-2 rounded-xl p-5 shadow-xl">
-        <p class="font-bold mb-3">企業対談</p>
-        <audio controls preload="none" class="w-full">
-          <source src="<%= asset_path('voice_corporate.mp3') %>" type="audio/mpeg">
-        </audio>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section class="text-center bg-gradient-to-b from-black via-gray-800 to-gray-600 overflow-hidden">
-  <div class="bg-gradient-to-b from-black via-gray-800 to-gray-600 items-center outline-4 outline-white inline-block text-center rounded-2xl mt-4 px-6">
-  <h1 class="text-6xl mb-2 py-4 font-bold pt-8 text-white ">映像実績</h1>
-  </div>
+<section class="text-center overflow-hidden relative z-20 bg-white">
   <div class="mb-10 py-10">
-    <h1 class="text-center text-6xl mb-2 py-4 font-bold pt-8 text-white after:block after:mx-auto after:bg-white after:w-48 after:h-1 after:text-center after:my-2">CM実績列</h1>
+    <h1 class="text-center text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">CM実績列</h1>
   <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 md:px-4 -mt-4 md:py-8 py-4">
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/ajr8Bd9orIo" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/EOKI-aaOwVw" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
@@ -351,7 +319,7 @@
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/oyZkCpEv-i4" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/vFsKgE-tv5E" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
   </div>
-  <h1 class="text-center text-6xl mb-2 py-4 font-bold pt-8 text-white after:block after:mx-auto after:bg-white after:w-48 after:h-1 after:text-center after:my-2">Youtube実績列</h1>
+  <h1 class="text-center text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">Youtube実績列</h1>
   <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 -mt-4 py-4 md:py-8">
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/KGVb3O1Iy18" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
     <iframe width="100%" height="200" allowfullscreen src="https://www.youtube.com/embed/FRpDP3OHC3A" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
@@ -363,16 +331,16 @@
   </div>
 </section>
 
-<section id="model" data-controller="gallery" class="overflow-hidden pb-16">
-  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-1 after:text-center after:my-2"> モデル実績 </h1>
+<section id="model" data-controller="gallery" class="overflow-hidden pb-16 relative z-20 bg-white">
+  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-black after:block after:mx-auto after:bg-black after:w-42 after:h-0.5 after:text-center after:my-2"> Gallery</h1>
   <div class="flex flex-wrap justify-center gap-3 mb-6 px-4">
-    <button data-gallery-target="button" data-category="beauty" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> BEAUTY </button>
-    <button data-gallery-target="button" data-category="business" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> BUSINESS </button>
-    <button data-gallery-target="button" data-category="family" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> FAMILY </button>
-    <button data-gallery-target="button" data-category="sports" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> SPORTS </button>
-    <button data-gallery-target="button" data-category="fashion" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> FASHION </button>
-    <button data-gallery-target="button" data-category="other" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> OTHER </button>
-    <button data-gallery-target="button" data-category="tvcm" data-action="click->gallery#show" class="hover:bg-white hover:text-black border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4"> TV/CM </button>
+    <button data-gallery-target="button" data-category="beauty" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> BEAUTY </button>
+    <button data-gallery-target="button" data-category="business" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> BUSINESS </button>
+    <button data-gallery-target="button" data-category="family" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> FAMILY </button>
+    <button data-gallery-target="button" data-category="sports" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> SPORTS </button>
+    <button data-gallery-target="button" data-category="fashion" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> FASHION </button>
+    <button data-gallery-target="button" data-category="other" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> OTHER </button>
+    <button data-gallery-target="button" data-category="tvcm" data-action="click->gallery#show" class="hover:bg-black hover:text-white border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4"> TV/CM </button>
   </div>
   <div class="max-w-6xl mx-auto px-4">
     <%# ビューティー %>
@@ -423,22 +391,43 @@
   </div>
 </section>
 
-<section id="SNS" class="mb-24 overflow-hidden">
-  <h1 class="text-center text-5xl mb-4 font-bold py-4 text-black"> SNS </h1>
-  <div class="flex flex-row justify-center gap-8">
-  <div class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-700 rounded-xl text-2xl w-35 h-35 flex justify-center items-center">
-    <a href="https://www.instagram.com/riii_maru162cm" target="_blank">
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg>
- </a>
-  </div>
-   <div class="bg-black rounded-xl text-2xl w-35 h-35 flex justify-center items-center">
-    <a href="https://www.tiktok.com/@riii_maru162cm?_t=8neS5AUM8JT&_r=1" target="_blank">
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
-  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-</svg>
- </a>
+<%# Audio samples %>
+<section class="flex flex-col items-center justify-center text-center pb-12 relative z-20 bg-white overflow-hidden">
+  <h1 class="text-center text-4xl mb-2 py-4 pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">ボイスサンプル</h1>
+    <div class="space-y-6 md:w-120 w-90">
+      <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+        <p class="font-bold mb-3">CMナレーション「お掃除編」</p>
+        <audio controls preload="none" class="w-full">
+          <source src="<%= asset_path('voice_cm_narration.mp3') %>" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+        <p class="font-bold mb-3">MC司会「ABCブース編」</p>
+        <audio controls preload="none" class="w-full">
+          <source src="<%= asset_path('voice_mc_abc.mp3') %>" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+        <p class="font-bold mb-3">企業対談</p>
+        <audio controls preload="none" class="w-full">
+          <source src="<%= asset_path('voice_corporate.mp3') %>" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+<%# Instagram %>
+  <section class="text-center overflow-hidden relative z-20 bg-white">
+  <div class="mb-10 py-10 p-4">
+    <h1 class="text-center text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">Instagram</h1>
+  <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+    <% (1..6).each do |i| %>
+    <%= link_to "https://www.instagram.com/riii_maru162cm", target: "_blank" do %>
+      <%= image_tag "riii_maru162cm_#{i}.jpg", class:"hover:scale-105 transition-all w-full object-cover rounded " %>
+    <% end %>
+  <% end %>
   </div>
   </div>
 </section>
