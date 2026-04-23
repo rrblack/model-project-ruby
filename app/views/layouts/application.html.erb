@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Montserrat:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Montserrat:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "https://unpkg.com/aos@2.3.1/dist/aos.css" %>
     <title><%= content_for(:title) || "倉沢りな ポートフォリオサイト" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -27,9 +27,9 @@
   </head>
   <body>
     <header data-controller="nav" class="absolute z-10 flex justify-end items-center md:p-3 md:p-6 p-2 w-full md:h-14 top-0">
-      <div class="text-black text-md relative">
+      <div class="text-black text-md ">
         <nav class="-mt-3">
-          <ul data-nav-target="menu" class="flex-col hidden md:!flex md:flex-row justify-center md:gap-8 gap-12">
+          <ul data-nav-target="menu" class="flex-col hidden md:!flex md:flex-row justify-center md:gap-8 gap-12 md:static absolute top-full right-0 md:bg-transparent bg-white/40">
             <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"> <%= link_to "自己紹介","/#intro"%></li>
             <span class="hidden md:!flex text-gray-500">|</span>
             <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"> <%= link_to "モデル","/#model"%></li>
