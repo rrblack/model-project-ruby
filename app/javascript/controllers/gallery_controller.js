@@ -15,6 +15,15 @@ export default class extends Controller {
         panel.classList.add("opacity-0", "h-0", "overflow-hidden", "pointer-events-none")
       }
     })
+    this.buttonTargets.forEach(button => {
+      if (button.dataset.category === "beauty") {
+        button.classList.add("bg-white", "text-black")
+        button.classList.remove("bg-black", "text-white")
+      } else {
+        button.classList.remove("bg-white", "text-black")
+        button.classList.add("bg-black", "text-white")
+      }
+    })
   }
 
   show(e) {
