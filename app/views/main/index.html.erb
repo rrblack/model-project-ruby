@@ -409,11 +409,18 @@ MC・リポーターでは企業イベント、対談、番組司会など現場
   <div class="mb-10 py-10 p-4">
     <h1 class="text-center text-2xl md:text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">Instagram</h1>
   <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-    <% (1..6).each do |i| %>
-    <%= link_to "https://www.instagram.com/riii_maru162cm", target: "_blank" do %>
-      <%= image_tag "riii_maru162cm_#{i}.jpg", class:"hover:scale-105 transition-all w-full object-cover rounded " %>
+    <% [
+      "https://www.instagram.com/p/DWqcoKcE5QR/",
+      "https://www.instagram.com/p/DXZIRtrk31p/?img_index=1",
+      "https://www.instagram.com/p/DW-YPjQk5O4/?img_index=1",
+      "https://www.instagram.com/p/DVWFgdGk9e9/?img_index=1",
+      "https://www.instagram.com/p/DWoLj_5kw-c/?img_index=1",
+      "https://www.instagram.com/p/DWXc9_kk8ZQ/"
+    ].each_with_index do |url, i| %>
+      <%= link_to url, target: "_blank" do %>
+        <%= image_tag "riii_maru162cm_#{i + 1}.jpg", class:"hover:scale-105 transition-all w-full object-cover rounded" %>
+      <% end %>
     <% end %>
-  <% end %>
   </div>
   </div>
 </section>
