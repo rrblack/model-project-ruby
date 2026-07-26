@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>お問い合わせ | 倉沢りな ポートフォリオサイト</title>
+    <meta name="description" content="倉沢りなへのお仕事のご依頼・お問い合わせはこちらから。">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Plus+Jakarta+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="absolute z-10 flex justify-end items-center md:p-6 p-2 w-full md:h-14 top-0">
+      <div class="text-black text-md">
+        <nav class="-mt-3">
+          <ul data-nav-menu class="flex-col hidden md:flex! md:flex-row justify-center md:gap-8 gap-12 md:static absolute top-full right-0 md:bg-transparent bg-white/40">
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#intro">自己紹介</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#model">モデル</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto">
+              <a href="index.html#doukai">
+                <span class="md:hidden">司会</span>
+                <span class="hidden md:block">司会リポーター</span>
+              </a>
+            </li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#SNS">SNS</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button data-nav-toggle aria-label="メニューを開く" aria-expanded="false" class="p-3 text-2xl cursor-pointer flex md:hidden text-black ml-auto">☰</button>
+    </header>
+    <main class="relative">
+      <section class="mx-auto justify-center md:w-120 min-h-screen overflow-hidden">
+        <div class="mt-20 p-4"><a href="index.html" class="text-sm text-gray-500 hover:text-black">← トップへ戻る</a></div>
+        <div class="flex flex-col md:border md:mt-4 p-10 rounded overflow-hidden">
+          <h1 class="text-xl font-bold mt-4 p-4 gap-2 text-center">お問い合わせ</h1>
+
+          <!-- TODO: Replace YOUR_FORM_ID with the real Formspree form ID (see README-DEPLOY.md) -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="mb-4 p-4 overflow-hidden">
+              <label for="name" class="text-md md:mb-1">お名前</label>
+              <input type="text" id="name" name="name" required class="w-full border p-2 rounded">
+            </div>
+
+            <div class="mb-4 p-4 overflow-hidden">
+              <label for="email" class="text-md mb-1">メール</label>
+              <input type="email" id="email" name="email" required class="w-full border p-2 rounded">
+            </div>
+
+            <div class="mb-4 p-4 overflow-hidden">
+              <label for="message" class="text-md mb-1">ご要件</label>
+              <textarea id="message" name="message" required class="border p-2 rounded w-full h-32"></textarea>
+            </div>
+
+            <!-- Spam honeypot — hidden from humans, bots fill it and get rejected -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="hidden" name="_subject" value="ポートフォリオサイトからのお問い合わせ">
+
+            <button type="submit" class="border rounded-xl h-10 bg-black transition-colors duration-500 hover:bg-gray-700 w-full text-white cursor-pointer">送信</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex flex-col justify-center items-center bg-black p-4 overflow-hidden">
+      <h1 class="text-center mx-auto font-bold text-white text-2xl">SNS</h1>
+      <div class="flex justify-center items-center mx-auto p-4">
+        <div class="flex flex-row justify-center gap-8">
+          <div class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-700 rounded-xl text-2xl w-10 h-10 flex justify-center items-center">
+            <a href="https://www.instagram.com/riii_maru162cm" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+          </div>
+          <div class="bg-black rounded-xl text-2xl w-10 h-10 flex flex-row items-center">
+            <a href="https://www.tiktok.com/@riii_maru162cm" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto text-center text-white md:text-sm text-sm">
+        <p class="bottom-0">Copyright <span id="year">2026</span> | Kurasawa Rina | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

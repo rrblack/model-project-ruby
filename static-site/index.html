@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>倉沢りな ポートフォリオサイト</title>
+    <meta name="description" content="フリーランスモデル・MC 倉沢りなの公式ポートフォリオサイト。広告・CM・企業プロモーション・司会・リポーターの実績とギャラリーをご覧いただけます。">
+    <meta property="og:title" content="倉沢りな ポートフォリオサイト">
+    <meta property="og:description" content="フリーランスモデル・MC 倉沢りなの公式ポートフォリオサイト。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/desktop_1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Plus+Jakarta+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="absolute z-10 flex justify-end items-center md:p-6 p-2 w-full md:h-14 top-0">
+      <div class="text-black text-md">
+        <nav class="-mt-3">
+          <ul data-nav-menu class="flex-col hidden md:flex! md:flex-row justify-center md:gap-8 gap-12 md:static absolute top-full right-0 md:bg-transparent bg-white/40">
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#intro">自己紹介</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#model">モデル</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto">
+              <a href="index.html#doukai">
+                <span class="md:hidden">司会</span>
+                <span class="hidden md:block">司会リポーター</span>
+              </a>
+            </li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="index.html#SNS">SNS</a></li>
+            <span class="hidden md:flex! text-gray-500" aria-hidden="true">|</span>
+            <li class="p-4 cursor-pointer transition-colors duration-500 hover:bg-white md:px-4 md:py-1 hover:text-black rounded-sm w-screen md:w-auto"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button data-nav-toggle aria-label="メニューを開く" aria-expanded="false" class="p-3 text-2xl cursor-pointer flex md:hidden text-white ml-auto">☰</button>
+    </header>
+
+    <main class="relative">
+      <!-- Desktop slideshow — hidden on mobile -->
+      <section data-slideshow class="hidden md:block relative h-screen overflow-hidden sticky top-0">
+        <div class="h-screen relative flex row">
+          <img src="images/desktop_1.jpg" alt="倉沢りな ポートレート 1" class="slide active absolute w-full h-full object-cover inset-0">
+          <img src="images/desktop_2.jpg" alt="倉沢りな ポートレート 2" class="slide absolute w-full h-full object-cover inset-0" loading="lazy">
+          <img src="images/desktop_3.jpg" alt="倉沢りな ポートレート 3" class="slide absolute w-full h-full object-cover inset-0" loading="lazy">
+          <img src="images/desktop_4.jpg" alt="倉沢りな ポートレート 4" class="slide absolute w-full h-full object-cover inset-0" loading="lazy">
+          <img src="images/signature.png" alt="" class="top-0 absolute opacity-75 right-1 -mx-48 mt-124 -translate-y-1/4">
+          <div class="fade-up absolute bottom-12 left-0 md:px-16 px-10">
+            <p style="text-shadow: 0 0 6px black, 0 0 6px black; font-family: 'Plus Jakarta Sans', sans-serif; color: #e8c4b8;" class="italic opacity-90 tracking-[0.15em] text-base md:text-lg mt-3 font-light">@riii_maru162cm</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile slideshow — hidden on desktop -->
+      <section data-slideshow class="md:hidden relative h-screen overflow-hidden">
+        <div class="h-screen">
+          <img src="images/mobile_1.jpg" alt="倉沢りな ポートレート 1" class="slide active absolute w-full h-full object-cover object-right inset-0">
+          <img src="images/mobile_2.jpg" alt="倉沢りな ポートレート 2" class="slide absolute w-full h-full object-cover object-top inset-0" loading="lazy">
+          <img src="images/mobile_3.jpg" alt="倉沢りな ポートレート 3" class="slide absolute w-full h-full object-cover object-top inset-0" loading="lazy">
+          <img src="images/signature.png" alt="" class="top-0 absolute scale-120">
+          <div class="fade-up absolute bottom-10 left-0 px-10">
+            <p style="text-shadow: 0 0 6px black, 0 0 6px black; font-family: 'Plus Jakarta Sans', sans-serif; color: #e8c4b8;" class="italic opacity-90 tracking-[0.15em] text-base md:text-lg mt-3 font-light">@riii_maru162cm</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 自己紹介 -->
+      <section id="intro" class="flex flex-col relative mx-auto overflow-hidden z-20 bg-white">
+        <div class="md:p-25 p-8">
+          <p class="text-center text-black text-2xl font-bold tracking-widest">Kurasawa Rina</p>
+          <p class="text-center text-black text-xl">freelance model</p>
+        </div>
+        <div class="md:-mt-15 flex flex-col md:flex-row md:justify-center md:items-stretch md:p-8 md:px-18 md:text-2xl p-8">
+          <img src="images/IMG_6996.jpeg" alt="倉沢りな プロフィール写真" class="hidden md:block lg:h-324 md:w-175 md:h-124 w-full h-full mb-20 rounded shadow-2xl object-cover" loading="lazy">
+          <img src="images/mobile.jpg" alt="倉沢りな プロフィール写真" class="md:hidden lg:h-324 md:w-175 md:h-124 w-full h-full mb-20 rounded shadow-2xl object-cover" loading="lazy">
+          <div class="flex flex-col md:items-stretch md:mx-24 mx-auto shadow-sm rounded-xl p-4 md:h-full md:w-175 w-full h-auto">
+            <div class="my-auto">
+              <details class="group p-4">
+                <summary class="relative flex items-center justify-center leading-tight text-black text-center p-4 text-xl -tracking-widest rounded-md border list-none cursor-pointer hover:bg-gray-100 hover:text-black group-open:bg-white group-open:text-black transition-colors duration-200"><span class="group-open:hidden absolute left-4 text-4xl ml-auto" aria-hidden="true">+</span><span class="hidden group-open:block absolute left-4 text-4xl ml-auto" aria-hidden="true">−</span>About Me</summary>
+                <div class="border-amber-950">
+                  <p class="md:h-auto px-10 p-4">
+                    広告・CM・企業プロモーション動画を中心に、10年以上活動。
+                    <br><br>
+                    MC・リポーターでは企業イベント、対談、番組司会など現場の雰囲気に合わせた臨機応変な進行に定評があります。
+                    <br><br>
+                    初めてのご依頼でも安心していただけるよう、一つひとつの現場に誠実に、丁寧な対応を心がけています。
+                  </p>
+                  <table class="border-collapse md:px-10 md:ml-10 w-full">
+                    <tbody>
+                      <tr>
+                        <td class="font-black pr-8 py-1">趣味</td>
+                        <td class="py-1">ヨガ、筋トレ、美味しいご飯屋さん開拓</td>
+                      </tr>
+                      <tr>
+                        <td class="font-black pr-8 py-1 pt-8 align-top">保有資格</td>
+                        <td class="py-1">
+                          <ul class="space-y-4 pt-8 align-top">
+                            <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-80 after:mt-2 after:h-0.5 overflow-hidden">サービス接遇検定準1級</li>
+                            <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-80 after:mt-2 after:h-0.5 overflow-hidden">日本化粧品検定2級</li>
+                            <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-80 after:mt-2 after:h-0.5 overflow-hidden">秘書技能検定2級</li>
+                            <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-80 after:mt-2 after:h-0.5 overflow-hidden">普通自動車免許</li>
+                            <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-black after:rounded-2xl after:w-80 after:mt-2 after:h-0.5 overflow-hidden">実用英語技能検定2級</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+
+              <details class="group p-4">
+                <summary class="relative flex items-center justify-center p-4 text-black text-xl list-none border rounded-md cursor-pointer hover:bg-gray-100 hover:text-black group-open:bg-white group-open:text-black transition-colors duration-200"><span class="group-open:hidden absolute left-4 text-4xl ml-auto" aria-hidden="true">+</span><span class="hidden group-open:block absolute left-4 text-4xl ml-auto" aria-hidden="true">−</span>Information</summary>
+                <div class="p-4 overflow-x-auto">
+                  <table class="border-collapse md:px-10 md:ml-10 w-full">
+                    <tbody>
+                      <tr><td class="font-black pr-8 py-1">Birthday</td><td class="py-1">1990/11/22</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Origin</td><td class="py-1">東京都</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Height</td><td class="py-1">162.5cm</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Bust</td><td class="py-1">83cm</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Waist</td><td class="py-1">61cm</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Hips</td><td class="py-1">87cm</td></tr>
+                      <tr><td class="font-black pr-8 py-1">Shoe Size</td><td class="py-1">24.5cm</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <a href="chart.pdf" target="_blank" rel="noopener" class="text-center hover:scale-105">Size Chart →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 経歴 -->
+      <section id="doukai" class="min-h-screen flex flex-col items-center overflow-hidden bg-white relative z-20">
+        <h1 class="text-center md:text-4xl text-2xl md:mb-4 mb-8 font-bold md:py-4 md:mt-8 text-black md:p-8 after:block after:mx-auto after:bg-black after:w-64 after:h-0.5 after:text-center after:my-2">経歴</h1>
+        <div class="md:columns-3 columns-1 md:px-64 text-2xl md:gap-24">
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none max-w-sm">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">広告</summary>
+            <ul class="md:mt-3 mt-8 space-y-6 text-sm md:text-xl md:gap-12 cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">農林水産省<br>米粉パンを食べよう</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">日本乳癌検診学会<br>全国乳がん検診</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">東武鉄道株式会社<br>東武バス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社オリエンタルランド<br>東京ディズニーシー ソワリン</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社近鉄<br>ユニバーサルシティ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社メガトップ<br>眼鏡市場</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">カネボウ株式会社<br>トワニー</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">コーセーミル<br>ボンコスメティックス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">箱根プリンスホテル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">軽井沢プリンスホテル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社ヒマラヤ<br>アンドライフ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社デサント</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社ルネサンス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社銀座きもの<br>青木</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">本田技巧株式会社<br>Honda fit</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">三菱自動車工業株式会社<br>デリカミニ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Hyundai<br>Mobility Japan</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社セブンイレブンジャパン<br>モンスト編</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">田中貴金属工業<br>シャワーヘッド</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社リクシル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社スタジオアリス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">野村不動産株式会社<br>プラウド</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">米ぬか酵素浴サロン<br>ブランルーム</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ECCジュニア</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">帝国ホテル　ブライダル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社ムーンバット</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Wピラティス<br>株式会社　wing</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ホットヨガスタジオLAVA</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">小山ゆうえん</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">CM、プロモーション</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">中国汾酒</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">レイヴィーナチュラル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">アイペット<br>うちの子保険</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">安楽亭<br>明日のカルビ、ファミリーカルビ。</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヨックモック</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">STRAPPER2WAY<br>スムースストラップライト<br>母役</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Totoco小田原</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">鴨川館</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">グランドプリンス<br>新高輪</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">公益社団法人<br>2027年国際園芸博覧会協会 母役</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">アパレル</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">モンクレール<br>着画モデル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">森英恵 着画モデル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">銀座きもの青木</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">4°C Webモデル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">KEYUCA</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">DESCENTE</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">MIZUNO 競泳水着</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヒマラヤスポーツ<br>ヨガウェア&amp;LIFE</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ワコール</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ユニバーサルスタジオジャパン</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社寺子屋<br>ちいかわもぐもぐ本舗</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">co-op生活協同組合<br>カタログ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社メドレー<br>ジョブメドレーサイト</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社ムーンバット</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ベルミススパッツ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">株式会社iiy<br>ナイトブラ、ショーツモデル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">セーレン株式会社<br>onaka想いガードル</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">イベント司会</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">東急バス<br>タンデムライナー開通式</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">シロカコーヒー</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">クノール<br>カップスープ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">グランツリー懇親会</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ホテルカン<br>ファレンス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヨックモック<br>春夏新作発表会</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ホンダキャン<br>ピングカーショー</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ユウアイ電子株式会社<br>50周年イベント</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">タグホイヤー×ポルシェ<br>イベント</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ロックタイトイベント<br>タレントユージ様とコラボ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">花王 エマール<br>ヤバイティーシャツ屋さん様とコラボ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">Tokyo camping car show<br>ホワイトハウス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ホンダStyle_iD</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">SUZUKIジムニー5ドア<br>モデルノマド</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">書籍表紙・雑誌掲載</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">マーケティング検定<br>3級問題集</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">最高の髪型解剖図鑑</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ゼクシィ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">レッツエンジョイ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヨガジャーナル</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">MC、対談、リポーター</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">本麒麟</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">三菱重工業</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">楽天ドラゴン</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ニシヤマ</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ヒトサラジャーナル<br>番組MCレポーター</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">シェフズテーブル<br>ラジオMC</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">モテシル リポーター</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">温泉女子 レポーター</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">セントラル短資FX</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">ドクターチョイス</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">NewsTV</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">日本郵政株式会社</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">メデュラ ナビゲーター</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">ナレーション</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">大阪万博2025 熊本編</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">モンスターバスケット</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">スニダン</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">BS旅チャンネル</li>
+            </ul>
+          </details>
+
+          <details class="group break-inside-avoid mb-6 bg-white md:p-6 p-1 md:shadow-lg shadow-sm rounded-lg cursor-pointer md:border-2 select-none md:mt-12">
+            <summary class="font-bold md:text-2xl text-xl md:px-0 px-4">テレビ</summary>
+            <ul class="mt-3 space-y-6 text-sm md:text-xl list-none cursor-default max-w-sm">
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">TBS キニナル通販</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">MIXチャンネル</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">おはようにっぽん</li>
+              <li class="relative transition-transform hover:translate-x-2 after:block after:absolute after:-bottom-2 after:bg-gray-300 after:rounded-2xl after:w-full after:mt-2 after:h-0.5">NEWS TV リポーター</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <!-- CM実績列 / 番組出演実績 -->
+      <section class="text-center overflow-hidden relative z-20 bg-white">
+        <div class="mb-10 py-10">
+          <h1 class="text-center text-2xl md:text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">CM実績列</h1>
+          <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 md:px-4 -mt-4 md:py-8 py-4">
+            <iframe width="100%" height="200" title="CM実績 1" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/ajr8Bd9orIo" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="CM実績 2" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/EOKI-aaOwVw" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="CM実績 3" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/wac0FdW9Fwk" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+          </div>
+          <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 md:px-4 -mt-4 py-4">
+            <iframe width="100%" height="200" title="CM実績 4" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/G8-NtQZCoM0" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="CM実績 5" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/oyZkCpEv-i4" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="CM実績 6" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/vFsKgE-tv5E" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+          </div>
+          <h1 class="text-center text-2xl md:text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">番組出演実績</h1>
+          <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 -mt-4 py-4 md:py-8">
+            <iframe width="100%" height="200" title="番組出演実績 1" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/KGVb3O1Iy18" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="番組出演実績 2" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/FRpDP3OHC3A" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+          </div>
+          <div class="flex flex-col md:flex-row gap-4 justify-center mx-auto px-4 -mt-4 py-4">
+            <iframe width="100%" height="200" title="番組出演実績 3" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/Ck4qNQdLREo" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+            <iframe width="100%" height="200" title="番組出演実績 4" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/YsVesPK2nVs" class="rounded shadow-2xl md:w-[500px] md:h-[260px]"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="model" data-gallery class="overflow-hidden pb-16 relative z-20 bg-white">
+        <h1 class="text-center text-2xl md:text-5xl mb-4 font-bold py-4 text-black after:block after:mx-auto after:bg-black after:w-42 after:h-0.5 after:text-center after:my-2">Gallery</h1>
+        <div class="flex flex-wrap justify-center gap-3 mb-6 px-4">
+          <button data-gallery-button data-category="beauty" class="border transition-colors duration-200 rounded-lg bg-white text-black text-xl cursor-pointer p-2 px-4">BEAUTY</button>
+          <button data-gallery-button data-category="business" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">BUSINESS</button>
+          <button data-gallery-button data-category="family" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">FAMILY</button>
+          <button data-gallery-button data-category="sports" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">SPORTS</button>
+          <button data-gallery-button data-category="fashion" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">FASHION</button>
+          <button data-gallery-button data-category="other" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">OTHER</button>
+          <button data-gallery-button data-category="tvcm" class="border transition-colors duration-200 rounded-lg bg-black text-white text-xl cursor-pointer p-2 px-4">TV/CM</button>
+        </div>
+        <div class="max-w-6xl mx-auto px-4">
+          <!-- BEAUTY -->
+          <div data-gallery-panel data-category="beauty" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-100">
+            <img src="images/beauty_1.jpg" alt="ビューティー撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_2.jpg" alt="ビューティー撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_3.jpg" alt="ビューティー撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_4.jpg" alt="ビューティー撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_5.jpg" alt="ビューティー撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_6.jpg" alt="ビューティー撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_7.jpg" alt="ビューティー撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_8.jpg" alt="ビューティー撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_9.jpg" alt="ビューティー撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_10.jpg" alt="ビューティー撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_11.jpg" alt="ビューティー撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_12.jpg" alt="ビューティー撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_13.jpg" alt="ビューティー撮影実績 13" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_14.jpg" alt="ビューティー撮影実績 14" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_15.jpg" alt="ビューティー撮影実績 15" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_16.jpg" alt="ビューティー撮影実績 16" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_17.jpg" alt="ビューティー撮影実績 17" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_18.jpg" alt="ビューティー撮影実績 18" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_19.jpg" alt="ビューティー撮影実績 19" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/beauty_20.jpg" alt="ビューティー撮影実績 20" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- BUSINESS -->
+          <div data-gallery-panel data-category="business" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/business_1.jpg" alt="ビジネス撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_2.jpg" alt="ビジネス撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_3.jpg" alt="ビジネス撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_4.jpg" alt="ビジネス撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_5.jpg" alt="ビジネス撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_6.jpg" alt="ビジネス撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_7.jpg" alt="ビジネス撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_8.jpg" alt="ビジネス撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_9.jpg" alt="ビジネス撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_10.jpg" alt="ビジネス撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_11.jpg" alt="ビジネス撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_12.jpg" alt="ビジネス撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_13.jpg" alt="ビジネス撮影実績 13" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_14.jpg" alt="ビジネス撮影実績 14" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_15.jpg" alt="ビジネス撮影実績 15" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_16.jpg" alt="ビジネス撮影実績 16" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_17.jpg" alt="ビジネス撮影実績 17" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_18.jpg" alt="ビジネス撮影実績 18" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/business_19.jpg" alt="ビジネス撮影実績 19" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- FAMILY -->
+          <div data-gallery-panel data-category="family" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/mother_1.jpg" alt="ファミリー撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_2.jpg" alt="ファミリー撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_3.jpg" alt="ファミリー撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_4.jpg" alt="ファミリー撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_5.jpg" alt="ファミリー撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_6.jpg" alt="ファミリー撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_7.jpg" alt="ファミリー撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_8.jpg" alt="ファミリー撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_9.jpg" alt="ファミリー撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_10.jpg" alt="ファミリー撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_11.jpg" alt="ファミリー撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/mother_12.jpg" alt="ファミリー撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- SPORTS -->
+          <div data-gallery-panel data-category="sports" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/sports_1.jpg" alt="スポーツ撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_2.jpg" alt="スポーツ撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_3.jpg" alt="スポーツ撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_4.jpg" alt="スポーツ撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_5.jpg" alt="スポーツ撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_6.jpg" alt="スポーツ撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_7.jpg" alt="スポーツ撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_8.jpg" alt="スポーツ撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_9.jpg" alt="スポーツ撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_10.jpg" alt="スポーツ撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_11.jpg" alt="スポーツ撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_12.jpg" alt="スポーツ撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_13.jpg" alt="スポーツ撮影実績 13" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_14.jpg" alt="スポーツ撮影実績 14" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_15.jpg" alt="スポーツ撮影実績 15" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_16.jpg" alt="スポーツ撮影実績 16" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_17.jpg" alt="スポーツ撮影実績 17" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_18.jpg" alt="スポーツ撮影実績 18" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/sports_19.jpg" alt="スポーツ撮影実績 19" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- FASHION -->
+          <div data-gallery-panel data-category="fashion" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/fashion_1.jpg" alt="ファッション撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_2.jpg" alt="ファッション撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_3.jpg" alt="ファッション撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_4.jpg" alt="ファッション撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_5.jpg" alt="ファッション撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_6.jpg" alt="ファッション撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_7.jpg" alt="ファッション撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_8.jpg" alt="ファッション撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_9.jpg" alt="ファッション撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_10.jpg" alt="ファッション撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_11.jpg" alt="ファッション撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_12.jpg" alt="ファッション撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_13.jpg" alt="ファッション撮影実績 13" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_14.jpg" alt="ファッション撮影実績 14" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_15.jpg" alt="ファッション撮影実績 15" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_16.jpg" alt="ファッション撮影実績 16" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_17.jpg" alt="ファッション撮影実績 17" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_18.jpg" alt="ファッション撮影実績 18" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_19.jpg" alt="ファッション撮影実績 19" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_20.jpg" alt="ファッション撮影実績 20" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_21.jpg" alt="ファッション撮影実績 21" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_22.jpg" alt="ファッション撮影実績 22" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_23.jpg" alt="ファッション撮影実績 23" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_24.jpg" alt="ファッション撮影実績 24" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_25.jpg" alt="ファッション撮影実績 25" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_26.jpg" alt="ファッション撮影実績 26" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_27.jpg" alt="ファッション撮影実績 27" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_28.jpg" alt="ファッション撮影実績 28" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_29.jpg" alt="ファッション撮影実績 29" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_30.jpg" alt="ファッション撮影実績 30" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_31.jpg" alt="ファッション撮影実績 31" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_32.jpg" alt="ファッション撮影実績 32" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_33.jpg" alt="ファッション撮影実績 33" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_34.jpg" alt="ファッション撮影実績 34" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_35.jpg" alt="ファッション撮影実績 35" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_36.jpg" alt="ファッション撮影実績 36" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_37.jpg" alt="ファッション撮影実績 37" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_38.jpg" alt="ファッション撮影実績 38" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_39.jpg" alt="ファッション撮影実績 39" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_40.jpg" alt="ファッション撮影実績 40" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/fashion_41.jpg" alt="ファッション撮影実績 41" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- OTHER -->
+          <div data-gallery-panel data-category="other" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/pet_1.jpg" alt="その他撮影実績 ペット 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/pet_2.jpg" alt="その他撮影実績 ペット 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/pet_3.jpg" alt="その他撮影実績 ペット 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/pet_4.jpg" alt="その他撮影実績 ペット 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_1.jpg" alt="その他撮影実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_2.jpg" alt="その他撮影実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_3.jpg" alt="その他撮影実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_4.jpg" alt="その他撮影実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_5.jpg" alt="その他撮影実績 5" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_6.jpg" alt="その他撮影実績 6" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_7.jpg" alt="その他撮影実績 7" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_8.jpg" alt="その他撮影実績 8" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_9.jpg" alt="その他撮影実績 9" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_10.jpg" alt="その他撮影実績 10" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_11.jpg" alt="その他撮影実績 11" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_12.jpg" alt="その他撮影実績 12" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_13.jpg" alt="その他撮影実績 13" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_14.jpg" alt="その他撮影実績 14" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_15.jpg" alt="その他撮影実績 15" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_16.jpg" alt="その他撮影実績 16" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_17.jpg" alt="その他撮影実績 17" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_18.jpg" alt="その他撮影実績 18" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_19.jpg" alt="その他撮影実績 19" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_20.jpg" alt="その他撮影実績 20" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_21.jpg" alt="その他撮影実績 21" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_22.jpg" alt="その他撮影実績 22" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_23.jpg" alt="その他撮影実績 23" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_24.jpg" alt="その他撮影実績 24" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_25.jpg" alt="その他撮影実績 25" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_26.jpg" alt="その他撮影実績 26" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_27.jpg" alt="その他撮影実績 27" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_28.jpg" alt="その他撮影実績 28" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/other_29.jpg" alt="その他撮影実績 29" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+          <!-- TV/CM -->
+          <div data-gallery-panel data-category="tvcm" class="grid grid-cols-1 md:grid-cols-3 gap-3 md:auto-rows-[10px] transition-opacity duration-500 opacity-0 h-0 overflow-hidden pointer-events-none">
+            <img src="images/koukoku_1.jpg" alt="TV・CM出演実績 1" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/koukoku_2.jpg" alt="TV・CM出演実績 2" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/koukoku_3.jpg" alt="TV・CM出演実績 3" loading="lazy" class="w-full object-cover rounded-lg">
+            <img src="images/koukoku_4.jpg" alt="TV・CM出演実績 4" loading="lazy" class="w-full object-cover rounded-lg">
+          </div>
+        </div>
+      </section>
+
+      <!-- ボイスサンプル -->
+      <section class="flex flex-col items-center justify-center text-center pb-12 relative z-20 bg-white overflow-hidden">
+        <h1 class="text-center text-2xl md:text-4xl mb-2 py-4 pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">ボイスサンプル</h1>
+        <div class="space-y-6 md:w-120 w-full max-w-xl px-4">
+          <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+            <p class="font-bold mb-3">MC司会「ABCブース編」</p>
+            <audio controls preload="none" class="w-full">
+              <source src="audio/voice_mc_abc.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+          <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+            <p class="font-bold mb-3">企業対談</p>
+            <audio controls preload="none" class="w-full">
+              <source src="audio/voice_corporate.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+          <div class="bg-white border-2 rounded-xl p-5 shadow-xl">
+            <p class="font-bold mb-3">CMナレーション「お掃除編」</p>
+            <audio controls preload="none" class="w-full">
+              <source src="audio/voice_cm_narration.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instagram -->
+      <section class="text-center overflow-hidden relative z-20 bg-white">
+        <div class="mb-10 py-10 p-4">
+          <h1 class="text-center text-2xl md:text-4xl mb-2 py-4 font-bold pt-8 text-black after:block after:mx-auto after:bg-black after:w-48 after:h-0.5 after:text-center after:my-2">Instagram</h1>
+          <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <a href="https://www.instagram.com/p/DWqcoKcE5QR/" target="_blank" rel="noopener"><img src="images/riii_maru162cm_1.jpg" alt="Instagram投稿 1" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+            <a href="https://www.instagram.com/p/DXZIRtrk31p/?img_index=1" target="_blank" rel="noopener"><img src="images/riii_maru162cm_2.jpg" alt="Instagram投稿 2" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+            <a href="https://www.instagram.com/p/DW-YPjQk5O4/?img_index=1" target="_blank" rel="noopener"><img src="images/riii_maru162cm_3.jpg" alt="Instagram投稿 3" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+            <a href="https://www.instagram.com/p/DVWFgdGk9e9/?img_index=1" target="_blank" rel="noopener"><img src="images/riii_maru162cm_4.jpg" alt="Instagram投稿 4" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+            <a href="https://www.instagram.com/p/DWoLj_5kw-c/?img_index=1" target="_blank" rel="noopener"><img src="images/riii_maru162cm_5.jpg" alt="Instagram投稿 5" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+            <a href="https://www.instagram.com/p/DWXc9_kk8ZQ/" target="_blank" rel="noopener"><img src="images/riii_maru162cm_6.jpg" alt="Instagram投稿 6" loading="lazy" class="hover:scale-105 transition-all w-full object-cover rounded"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex flex-col justify-center items-center bg-black p-4 overflow-hidden">
+      <h1 id="SNS" class="text-center mx-auto font-bold text-white text-2xl">SNS</h1>
+      <div class="flex justify-center items-center mx-auto p-4">
+        <div class="flex flex-row justify-center gap-8">
+          <div class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-700 rounded-xl text-2xl w-10 h-10 flex justify-center items-center">
+            <a href="https://www.instagram.com/riii_maru162cm" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+          </div>
+          <div class="bg-black rounded-xl text-2xl w-10 h-10 flex flex-row items-center">
+            <a href="https://www.tiktok.com/@riii_maru162cm" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto text-center text-white md:text-sm text-sm">
+        <p class="bottom-0">Copyright <span id="year">2026</span> | Kurasawa Rina | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

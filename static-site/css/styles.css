@@ -1,0 +1,65 @@
+/* ===== Fonts ===== */
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+nav {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+}
+
+footer {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 100;
+}
+
+summary {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+ul {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Hero slideshow (Ken Burns + crossfade) ===== */
+@keyframes kenburns {
+  from { transform: scale(1.0); }
+  to   { transform: scale(1.03); }
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  animation: kenburns 6s ease-out forwards;
+}
+
+/* ===== Fade-up entrance for hero text (replaces AOS) ===== */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 2s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide.active { animation: none; }
+  .fade-up { animation: none; }
+  html { scroll-behavior: auto; }
+}
